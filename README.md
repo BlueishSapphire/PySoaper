@@ -15,9 +15,9 @@ Soaper is organized into test suites that contain individual tests. All test sui
 ```py
 from soaper import TestSuite
 
+
 class MyTestSuite(TestSuite):
 	"""Here's where the description goes"""
-
 
 	# your tests go here
 ```

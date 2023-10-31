@@ -1,4 +1,4 @@
-from soaper import TestSuite, test
+from soaper import TestSuite, test, expect
 
 
 class MyTestSuite(TestSuite):
@@ -10,8 +10,4 @@ class MyTestSuite(TestSuite):
 
 
 if __name__ == "__main__":
-	# because only one test suite is loaded, thsese are both the same
-
 	MyTestSuite.run()
-
-	TestSuite.run_all()
