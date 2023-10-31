@@ -188,7 +188,7 @@ class expect:
 		)
 
 	@classmethod
-	def fail(cls, msg: str = None):
+	def fail(cls, msg: str = "Explicit failure"):
 		"""Fail the current test.
 		"""
 		raise expect._get_fail(sys._getframe().f_back, msg)
@@ -204,11 +204,11 @@ class expect:
 
 		return TestFailException(
 			context.from_frame(parent[0], frame, frame.f_lineno, underline),
-			msg or "Explicit failure",
+			msg,
 		)
 
 	@classmethod
-	def fail_if(condition: bool, msg: str = None):
+	def fail_if(condition: bool, msg: str = "Explicit failure"):
 		"""Fail the current test if a condition is true.
 		"""
 		if condition:
@@ -379,7 +379,7 @@ class expect:
 			f"\x1b[22m{self.parent.color.received}- {value}"
 		)
 	
-	def to_be(self, value):
+	def to_not_be(self, value):
 		if self.value is not value: return
 		self._fail(
 			"expected values to not be the same\n\n"
