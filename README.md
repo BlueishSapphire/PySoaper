@@ -18,6 +18,7 @@ from soaper import TestSuite
 class MyTestSuite(TestSuite):
 	"""Here's where the description goes"""
 
+
 	# your tests go here
 ```
 
@@ -25,6 +26,7 @@ Now this isn't very useful on its own. We need to know how to make the individua
 
 ```py
 from soaper import TestSuite, test
+
 
 class MyTestSuite(TestSuite):
 	"""An example testing suite"""
@@ -38,6 +40,7 @@ But this still doesn't have much functionality. We need assertions, and test cas
 
 ```py
 from soaper import TestSuite, test
+
 
 class MyTestSuite(TestSuite):
 	"""An example testing suite"""
