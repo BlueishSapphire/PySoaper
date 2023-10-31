@@ -73,7 +73,7 @@ class TestSuite:
 		Per-suite config to modify functionality and change the output format.
 		"""
 
-		autorun_tests = True
+		autorun_tests = False
 
 		show_suites = True
 		show_suite_docstring = True
