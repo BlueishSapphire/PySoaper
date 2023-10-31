@@ -1,5 +1,6 @@
-from src.context import context
-import src.soaper
+from .context import context
+import .soaper
+
 
 from dataclasses import dataclass
 import io

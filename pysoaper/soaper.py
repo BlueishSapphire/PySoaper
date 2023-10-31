@@ -1,6 +1,7 @@
-from src.expect import TestFailException
-from src.context import context
-from src.decorator import TestDecorator
+from .expect import TestFailException
+from .context import context
+from .decorator import TestDecorator
+
 
 from functools import partial
 from dataclasses import dataclass
