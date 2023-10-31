@@ -1,4 +1,4 @@
-from __init__ import TestSuite, test, expect, call_with
+from pysoaper import TestSuite, test, expect, call_with
 import math
 
 

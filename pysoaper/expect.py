@@ -1,5 +1,4 @@
 from .context import context
-import .soaper
 
 
 from dataclasses import dataclass
@@ -110,9 +109,10 @@ class call_with:
 
 _primitive_types = (bool, str, int, float, type(None))
 def _get_frame_func(frame, max_depth: int = 15):
+	from .soaper import TestSuite
 	# put together a dict of objects to check
 	# priority goes to test suites, then locals, then globals
-	children = {suite.__name__: suite for suite in src.soaper.TestSuite.suites}
+	children = {suite.__name__: suite for suite in TestSuite.suites}
 	children.update(frame.f_locals)
 	children.update(frame.f_globals)
 
