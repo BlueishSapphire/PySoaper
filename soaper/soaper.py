@@ -324,7 +324,7 @@ def _run_test_suite(cls: any):
 			f"{TestSuite.color.result_suffix}"
 			"\x1b[m"
 		)
-		if cls.config.show_suite_docstring:
+		if cls.config.show_suite_docstring and cls.__doc__:
 			docstring = " / ".join(_split_lines(cls.__doc__))
 			print(f"│ {TestSuite.color.context}└─\u2192 {docstring}\x1b[m")
 
