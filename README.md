@@ -61,6 +61,29 @@ if __name__ == "__main__":
 	TestSuite.run_all()
 ```
 
+Here is the finished code:
+
+```py
+from soaper import TestSuite, test, expect
+
+
+class MyTestSuite(TestSuite):
+	"""An example testing suite"""
+
+	@test
+	def my_first_test():
+		expect(True).to_not_equal(False)
+
+
+if __name__ == "__main__":
+	MyTestSuite.run()
+```
+
+Now you'll get the following output if you run this script:
+
+![Example output](example.png)
+
+(This script is available in [example.py](example.py))
 
 # Reference
 
