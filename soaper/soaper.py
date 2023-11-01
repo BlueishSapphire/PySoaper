@@ -384,7 +384,10 @@ def _run_test_suite(cls: any):
 		)
 	
 	print("│ ")
-	print("├─ " + "\n├─ ".join(results[:-1]) + "\n╰─ " + results[-1])
+	if len(results) == 1:
+		print("╰─ " + results[0])
+	else:
+		print("├─ " + "\n├─ ".join(results[:-1]) + "\n╰─ " + results[-1])
 	print()
 
 
