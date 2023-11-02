@@ -2,7 +2,7 @@
 
 Soaper is a testing framework for Python that is loosely based on Jest. It's had a few changes to fit python better, namely limiting the use of anonymous functions. A few personal touches have been added as well.
 
-This is not gauranteed to get future support. This is a one-time personal project and might be abandoned at any point.
+This is not guaranteed to get future support. This is a one-time personal project and might be abandoned at any point.
 
 # Installation
 To install soaper with pip, run the following command:
